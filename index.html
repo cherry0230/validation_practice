@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/030caeab59.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="btn-container">
+                <button id="btn">Home</button>
+                <button id="btn">Info</button>
+                <button id="btn">About Us</button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+
+        <form action="">
+            
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="user-name" onkeyup="validateName()">
+                <span id="name-error"></span>
+            </div>
+            
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="9874622138" id="phone-num" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+
+            </div>
+
+            <div class="input-group">
+                <label>Email ID</label>
+                <input  placeholder="abscsd@gmail.com" id="email-id" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <textarea placeholder="Enter Your Text"  rows="5" id="text-id" onkeyup="validateText()"></textarea>
+                <span id="message-error"></span>
+            </div>
+
+            <button type="submit">submit</button>
+            <span id="submit-error"></span>
+        </form>
+
+        
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
